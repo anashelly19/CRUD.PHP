@@ -35,9 +35,9 @@ if(isset($_GET['id'])){
 
     if($result->num_rows >0){
         while($row = $result->fetch_assoc()){
-            $primeironome = $row['primeiro nome'];
+            $primeironome = $row['primeironome'];
             $ultimonome = $row['ultimonome'];
-            $id = $row['id '];
+            $id = $row['id'];
             $email = $row['email'];
             $password = $row['password'];
             $genero = $row['genero'];
@@ -52,7 +52,7 @@ if(isset($_GET['id'])){
         <fieldset>
             <legend>Informações Pessoais:</legend>
             Primeiro Nome:<br>
-            <input type="text" name="primeironome"> value="<?php echo $primeironome;?>
+            <input type="text" name="primeironome"> value="<?php echo $primeironome;?>>
             <br><br>
 
             ultimo Nome: <br>
